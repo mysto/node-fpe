@@ -44,7 +44,9 @@ This package does not protect the key in memory.
 
 The example code below can help you get started.
 
-```node
+Using default domain [0-9]
+
+```js
 
 const key = "EF4359D8D580AA4F7F036D6F04FC6A94"
 const tweak = "D8E7920AFA330A73"
