@@ -1,0 +1,35 @@
+{
+  "name": "node-ff3",
+  "version": "0.8.0",
+  "description": "NIST standard Format-preserving encryption FF3-1 implementation",
+  "main": "lib",
+  "scripts": {
+    "test": "npm run tape test"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bugs:": "https://github.com/mysto/node-fpe/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mysto/node-fpe.git"
+  },
+  "author": "Brad Schoening",
+  "homepage": "https://github.com/mysto/node-fpe",
+  "keywords": [
+    "fpe",
+    "ff3",
+    "format",
+    "preserving",
+    "encryption",
+    "cipher"
+  ],
+  "files": [
+    "lib",
+    "*.js"
+  ],
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "tape": "^5.1.0"
+  }
+}
