@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/mysto/node-fpe.svg?branch=main)](https://travis-ci.com/mysto/node-fpe)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # ff3 - Format Preserving Encryption in Node.js
@@ -12,7 +13,7 @@ Changes to minimum domain size and revised tweak length have been partially impl
 
 ## Requires
 
-This project was built and tested with Node.js 15.  It requires the crypto library:
+This project was built and tested with Node.js 12 and later versions.  It requires the crypto library:
 
 ## Installation
 
@@ -67,7 +68,7 @@ There are official [test vectors](https://csrc.nist.gov/csrc/media/projects/cryp
 
 To run unit tests on this implementation, including all test vectors from the NIST specification, run the command:
 
-  1. tbd
+  1. node test/FF3CipherTest.js
 
 ## FF3 Algorithum
 
@@ -81,7 +82,7 @@ the *tweak* is used together with the intermediate encrypted text as input to th
 
 ## Implementation Notes
 
-This implementation was originally based upon the [Capital One Go implemntation](https://github.com/capitalone/fpe).  It follows the algorithm as outlined in the NIST specification as closely as possible, including naming.
+This implementation follows the algorithm as outlined in the NIST specification as closely as possible, including naming.
 
 FPE can be used for sensitive data tokenization, especially with PCI and cryptographically reversible tokens. This implementation does not provide any guarantees regarding PCI DSS or other validation.
 
