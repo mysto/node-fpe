@@ -4,7 +4,7 @@
   "description": "NIST standard Format-preserving encryption FF3-1 implementation",
   "main": "lib",
   "scripts": {
-    "test": "npm run tape test"
+    "test": "tape test/*.js"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -30,6 +30,6 @@
   ],
   "license": "Apache 2.0",
   "devDependencies": {
-    "tape": "^5.1.0"
+    "tape": "^5.2.2"
   }
 }
