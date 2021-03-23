@@ -17,14 +17,13 @@ This project was built and tested with Node.js 12 and later versions.  It requir
 
 ## Installation
 
-tbd w/npm install
+`npm install ff3`
 
 ## Usage
 
 FF3 is a Feistel ciphers, and Feistel ciphers are initialized with a radix representing an alphabet.  
 Practial radix limits of 36 in python means the following radix values are typical:
 * radix 10: digits 0..9
-* radix 26: alphabetic a-z
 * radix 36: alphanumeric 0..9, a-z
 
 Special characters and international character sets, such as those found in UTF-8, would require a larger radix, and are not supported. 
@@ -32,8 +31,7 @@ Also, all elements in a plaintext string share the same radix. Thus, an identifi
 by 6 digits (e.g. A123456) cannot be correctly encrypted by FPE while preserving this convention.
 
 Input plaintext has maximum length restrictions based upon the chosen radix (2 * floor(96/log2(radix))):
-* radix 10: 56 
-* radix 26: 40
+* radix 10: 56
 * radix 36: 36
 
 To work around string length, its possible to encode longer text in chunks.
@@ -48,6 +46,7 @@ The example code below can help you get started.
 Using default domain [0-9]
 
 ```js
+const FF3Cipher = require('ff3/lib/FF3Cipher');
 
 const key = "EF4359D8D580AA4F7F036D6F04FC6A94"
 const tweak = "D8E7920AFA330A73"
@@ -57,9 +56,7 @@ const plaintext = "4000001234567899"
 let ciphertext = c.encrypt(plaintext)
 let decrypted = c.decrypt(ciphertext)
 
-console.log("Original: " + plaintext)
-console.log("Ciphertext: " + ciphertext)
-console.log("Decrypted: " + decrypted)
+console.log("%s -> %s -> %s", plaintext, ciphertext, decrypted)
 
 ```
 ## Testing
