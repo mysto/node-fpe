@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.com/mysto/node-fpe.svg?branch=main)](https://travis-ci.com/mysto/node-fpe)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![npm module downloads](https://badgen.net/npm/dt/ff3)](https://www.npmjs.org/package/ff3)
 
 # ff3 - Format Preserving Encryption in Node.js
 
@@ -21,7 +22,7 @@ This project was built and tested with Node.js 12 and later versions.  It requir
 
 ## Usage
 
-FF3 is a Feistel ciphers, and Feistel ciphers are initialized with a radix representing an alphabet.  
+FF3 is a Feistel cipher, and Feistel ciphers are initialized with a radix representing an alphabet.  
 Practial radix limits of 36 in python means the following radix values are typical:
 * radix 10: digits 0..9
 * radix 36: alphanumeric 0..9, a-z
