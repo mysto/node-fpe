@@ -16,10 +16,9 @@
   "author": "Brad Schoening",
   "homepage": "https://github.com/mysto/node-fpe",
   "keywords": [
-    "fpe",
-    "ff3",
-    "format",
-    "preserving",
+    "FPE",
+    "FF3",
+    "format-preserving",
     "encryption",
     "cipher"
   ],
