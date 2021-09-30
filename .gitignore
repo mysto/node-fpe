@@ -1,0 +1,7 @@
+.*
+!.gitignore
+!.travis.yml
+
+# Distribution / packaging
+node_modules/
+package-lock.json
