@@ -4,7 +4,7 @@
 
 # ff3 - Format Preserving Encryption in Node.js
 
-An implementation of the NIST approved Format Preserving Encryption (FPE) FF3 algorithm in Node.js.
+An implementation of the NIST approved FF3-1 and FF3 Format Preserving Encryption (FPE) algorithm in Node.js.
 
 This package follows the FF3 algorithm for Format Preserving Encryption as described in the March 2016 NIST publication 800-38G _Methods for Format-Preserving Encryption_, 
 and revised on February 28th, 2019 with a draft update for FF3-1.
@@ -12,7 +12,10 @@ and revised on February 28th, 2019 with a draft update for FF3-1.
 * [NIST Recommendation SP 800-38G (FF3)](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38G.pdf)
 * [NIST Recommendation SP 800-38G Revision 1 (FF3-1)](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38Gr1-draft.pdf)
 
-Changes to minimum domain size and revised tweak length have been partially implemented in this package with updates to domain size. It is expected that the final standard will provide new test vectors necessary to change the tweak lengths to 56 bits.  Currently, tweaks remain set to 64 bits.
+Changes to minimum domain size and revised tweak length have been implemented in this package with
+suport for both 64-bit and 56-bit tweaks. NIST has only published official test vectors for 64-bit tweaks,
+but draft ACVP test vectors have been used for testing FF3-1. It is expected the final
+NIST standard will provide updated test vectors with 56-bit tweak lengths.
 
 ## Requires
 
