@@ -226,3 +226,14 @@ test('test256dot5', (t) => {
   t.equal(ct, ciphertext);
   t.equal(pt, plaintext);
 });
+
+test('testFF3_1', (t) => {
+  t.plan(2);
+  // 
+  const c = new FF3Cipher("EF4359D8D580AA4F7F036D6F04FC6A94", "D8E7920AFA330A", 10);
+  const pt = "890121234567890000", ct = "477064185124354662";
+  let ciphertext = c.encrypt(pt);
+  let plaintext = c.decrypt(ciphertext);
+  t.equal(ct, ciphertext);
+  t.equal(pt, plaintext);
+});
