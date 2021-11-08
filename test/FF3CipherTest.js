@@ -24,7 +24,7 @@ test('radix', (t) => {
   t.equal(Number.parseInt("z",36),35)
   t.equal(FF3Cipher.mod((706456850n - 316291629567414359958402343312719325709n ),1000000000n),987131141n)
   // Buffer.from([ 8, 6, 7, 5, 3, 0, 9]);
-})
+});
 
 test('calculateP', (t) => {
   t.plan(1);
@@ -226,6 +226,30 @@ test('test256dot5', (t) => {
   t.equal(ct, ciphertext);
   t.equal(pt, plaintext);
 });
+
+test('testacvp128dot1', (t) => {
+  t.plan(2);
+  // ACVP tg: 1-3 tc: 1-2
+  const c = new FF3Cipher("2DE79D232DF5585D68CE47882AE256D6", "CBD09280979564", 10);
+  const pt = "3992520240", ct = "8901801106";
+  let ciphertext = c.encrypt(pt);
+  let plaintext = c.decrypt(ciphertext);
+  t.equal(ct, ciphertext);
+  t.equal(pt, plaintext);
+});
+
+/*
+test('testacvp128dot2', (t) => {
+  t.plan(2);
+  // ACVP tg: 1-3 tc: 1-2
+  const c = new FF3Cipher("01C63017111438F7FC8E24EB16C71AB5", "C4E822DCD09F27", 10);
+  const pt = "60761757463116869318437658042297305934914824457484538562", ct = "35637144092473838892796702739628394376915177448290847293";
+  let ciphertext = c.encrypt(pt);
+  let plaintext = c.decrypt(ciphertext);
+  t.equal(ct, ciphertext);
+  t.equal(pt, plaintext);
+});
+*/
 
 test('testFF3_1', (t) => {
   t.plan(2);
