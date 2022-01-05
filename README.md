@@ -3,6 +3,16 @@
 [![npm module downloads](https://badgen.net/npm/dt/ff3)](https://www.npmjs.org/package/ff3)
 [![npm version](https://badge.fury.io/js/node-fpe.svg)](https://badge.fury.io/js/node-fpe)
 
+
+<p align="center">
+  <a href="https://privacylogistics.com/">
+    <img
+      alt="Mysto"
+      src="https://privacylogistics.com/Mysto-logo.jpg"
+    />
+  </a>
+</p>
+
 # ff3 - Format Preserving Encryption in Node.js
 
 An implementation of the NIST approved FF3-1 and FF3 Format Preserving Encryption (FPE) algorithm in Node.js.
