@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.com/mysto/node-fpe.svg?branch=main)](https://travis-ci.com/mysto/node-fpe)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![npm module downloads](https://badgen.net/npm/dt/ff3)](https://www.npmjs.org/package/ff3)
+[![npm version](https://badge.fury.io/js/node-fpe.svg)](https://badge.fury.io/js/node-fpe)
 
 # ff3 - Format Preserving Encryption in Node.js
 
