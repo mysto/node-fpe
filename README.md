@@ -27,10 +27,6 @@ suport for both 64-bit and 56-bit tweaks. NIST has only published official test 
 but draft ACVP test vectors have been used for testing FF3-1. It is expected the final
 NIST standard will provide updated test vectors with 56-bit tweak lengths.
 
-## Requires
-
-This project was built and tested with Node.js 12 and later versions.  It requires the crypto library:
-
 ## Installation
 
 `npm install ff3`
@@ -76,6 +72,10 @@ let decrypted = c.decrypt(ciphertext)
 console.log("%s -> %s -> %s", plaintext, ciphertext, decrypted)
 
 ```
+## Requires
+
+This project was built and tested with Node.js 12 and later versions.  It requires the 'crypto' library.
+
 ## Testing
 
 There are official [test vectors](https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/examples/ff3samples.pdf) for FF3 provided by NIST, which are used for testing in this package.
