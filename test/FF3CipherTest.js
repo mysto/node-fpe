@@ -238,12 +238,57 @@ test('testacvp128dot1', (t) => {
   t.equal(pt, plaintext);
 });
 
-/*
+
 test('testacvp128dot2', (t) => {
   t.plan(2);
   // ACVP tg: 1-3 tc: 1-2
   const c = new FF3Cipher("01C63017111438F7FC8E24EB16C71AB5", "C4E822DCD09F27", 10);
   const pt = "60761757463116869318437658042297305934914824457484538562", ct = "35637144092473838892796702739628394376915177448290847293";
+  let ciphertext = c.encrypt(pt);
+  let plaintext = c.decrypt(ciphertext);
+  t.equal(ct, ciphertext);
+  t.equal(pt, plaintext);
+});
+
+/*
+test('testacvp128dot3', (t) => {
+  t.plan(2);
+  // ACVP tg: 2 tc: 26
+  const c = new FF3Cipher("718385E6542534604419E83CE387A437", "B6F35084FA90E1", 10);
+  const pt = "wfmwlrorcd", ct = "ywowehycyd";
+  let ciphertext = c.encrypt(pt);
+  let plaintext = c.decrypt(ciphertext);
+  t.equal(ct, ciphertext);
+  t.equal(pt, plaintext);
+});
+
+test('testacvp128dot4', (t) => {
+  t.plan(2);
+  // ACVP tg: 2 tc: 27
+  const c = new FF3Cipher("DB602DFF22ED7E84C8D8C865A941A238", "EBEFD63BCC2083", 26);
+  const pt = "kkuomenbzqvggfbteqdyanwpmhzdmoicekiihkrm", ct = "belcfahcwwytwrckieymthabgjjfkxtxauipmjja";
+  let ciphertext = c.encrypt(pt);
+  let plaintext = c.decrypt(ciphertext);
+  t.equal(ct, ciphertext);
+  t.equal(pt, plaintext);
+});
+
+test('testacvp128dot5', (t) => {
+  t.plan(2);
+  // ACVP tg: 3 tc: 51
+  const c = new FF3Cipher("AEE87D0D485B3AFD12BD1E0B9D03D50D", "5F9140601D224B", 64);
+  const pt = "ixvuuIHr0e", ct = "GR90R1q838";
+  let ciphertext = c.encrypt(pt);
+  let plaintext = c.decrypt(ciphertext);
+  t.equal(ct, ciphertext);
+  t.equal(pt, plaintext);
+});
+
+test('testacvp128dot6', (t) => {
+  t.plan(2);
+  // ACVP tg: 3 tc: 52
+  const c = new FF3Cipher("7B6C88324732F7F4AD435DA9AD77F917", "3F42102C0BAB39", alphabet= "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/");
+  const pt = "21q1kbbIVSrAFtdFWzdMeIDpRqpo", ct = "cvQ/4aGUV4wRnyO3CHmgEKW5hk8H";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
   t.equal(ct, ciphertext);
