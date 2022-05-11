@@ -53,8 +53,8 @@ test('encrypt-decrypt', (t) => {
   const ct = "750918814058654607";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ct);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 /*
@@ -73,8 +73,8 @@ test('128dot1', (t) => {
   const pt = "890121234567890000", ct = "750918814058654607";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test128dot2()', (t) => {
@@ -84,8 +84,8 @@ test('test128dot2()', (t) => {
   const pt = "890121234567890000", ct = "018989839189395384";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test128dot3', (t) => {
@@ -95,8 +95,8 @@ test('test128dot3', (t) => {
   const pt = "89012123456789000000789000000", ct = "48598367162252569629397416226";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test128dot4', (t) => {
@@ -106,8 +106,8 @@ test('test128dot4', (t) => {
   const pt = "89012123456789000000789000000", ct = "34695224821734535122613701434";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test128dot5', (t) => {
@@ -117,8 +117,8 @@ test('test128dot5', (t) => {
   const pt = "0123456789abcdefghi", ct = "g2pk40i992fn20cjakb";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 // AES-192
@@ -130,8 +130,8 @@ test('test192dot1', (t) => {
   const pt = "890121234567890000", ct = "646965393875028755";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test192dot2', (t) => {
@@ -141,8 +141,8 @@ test('test192dot2', (t) => {
   const pt = "890121234567890000", ct = "961610514491424446";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test192dot3', (t) => {
@@ -152,8 +152,8 @@ test('test192dot3', (t) => {
   const pt = "89012123456789000000789000000", ct = "53048884065350204541786380807";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test192dot4', (t) => {
@@ -163,8 +163,8 @@ test('test192dot4', (t) => {
   const pt = "89012123456789000000789000000", ct = "98083802678820389295041483512";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test192dot5', (t) => {
@@ -174,8 +174,8 @@ test('test192dot5', (t) => {
   const pt = "0123456789abcdefghi", ct = "i0ihe2jfj7a9opf9p88";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 // AES-256
@@ -187,8 +187,8 @@ test('test256dot1', (t) => {
   const pt = "890121234567890000", ct = "922011205562777495";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test256dot2', (t) => {
@@ -198,8 +198,8 @@ test('test256dot2', (t) => {
   const pt = "890121234567890000", ct = "504149865578056140";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test256dot3', (t) => {
@@ -209,8 +209,8 @@ test('test256dot3', (t) => {
   const pt = "89012123456789000000789000000", ct = "04344343235792599165734622699";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test256dot4', (t) => {
@@ -220,8 +220,8 @@ test('test256dot4', (t) => {
   const pt = "89012123456789000000789000000", ct = "30859239999374053872365555822";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equals(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('test256dot5', (t) => {
@@ -231,8 +231,8 @@ test('test256dot5', (t) => {
   const pt = "0123456789abcdefghi", ct = "p0b2godfja9bhb7bk38";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('testacvp128dot1', (t) => {
@@ -242,8 +242,8 @@ test('testacvp128dot1', (t) => {
   const pt = "3992520240", ct = "8901801106";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 
@@ -254,8 +254,8 @@ test('testacvp128dot2', (t) => {
   const pt = "60761757463116869318437658042297305934914824457484538562", ct = "35637144092473838892796702739628394376915177448290847293";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 /*
@@ -266,8 +266,8 @@ test('testacvp128dot3', (t) => {
   const pt = "wfmwlrorcd", ct = "ywowehycyd";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('testacvp128dot4', (t) => {
@@ -277,8 +277,8 @@ test('testacvp128dot4', (t) => {
   const pt = "kkuomenbzqvggfbteqdyanwpmhzdmoicekiihkrm", ct = "belcfahcwwytwrckieymthabgjjfkxtxauipmjja";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('testacvp128dot5', (t) => {
@@ -288,8 +288,8 @@ test('testacvp128dot5', (t) => {
   const pt = "ixvuuIHr0e", ct = "GR90R1q838";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 
 test('testacvp128dot6', (t) => {
@@ -299,8 +299,8 @@ test('testacvp128dot6', (t) => {
   const pt = "21q1kbbIVSrAFtdFWzdMeIDpRqpo", ct = "cvQ/4aGUV4wRnyO3CHmgEKW5hk8H";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
 */
 
@@ -311,6 +311,6 @@ test('testFF3_1', (t) => {
   const pt = "890121234567890000", ct = "477064185124354662";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
-  t.equal(ct, ciphertext);
-  t.equal(pt, plaintext);
+  t.equal(ciphertext, ct);
+  t.equal(plaintext, pt);
 });
