@@ -2,6 +2,12 @@ const test = require('tape');
 const FF3Cipher = require('../lib/FF3Cipher');
 const crypto = require('crypto')
 
+/*
+ * Unit Tests
+ *
+ * NIST Test Vectors for 128 bit modes
+ */
+
 test('AES ECB encryption', (t) => {
   // NIST test vector for ECB-AES128
   t.plan(1);
@@ -52,6 +58,8 @@ test('encrypt-decrypt', (t) => {
 });
 
 /*
+ * Integration Tests
+ *
  * NIST Test Vectors for 128, 198, and 256 bit modes
  * https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/examples/ff3samples.pdf
  */
