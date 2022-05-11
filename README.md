@@ -14,11 +14,9 @@
 
 # ff3 - Format Preserving Encryption in Node.js
 
-An implementation of the NIST approved FF3-1 and FF3 Format Preserving Encryption (FPE) algorithm in Node.js.
+An implementation of the NIST approved FF3 and FF3-1 Format Preserving Encryption (FPE) algorithm in Node.js.
 
-This package follows the FF3 algorithm for Format Preserving Encryption as described in the March 2016 NIST publication 800-38G _Methods for Format-Preserving Encryption_, 
-and revised on February 28th, 2019 with a draft update for FF3-1.
-
+This package implements the FF3 algorithm for Format Preserving Encryption as described in the March 2016 NIST publication 800-38G Methods for Format-Preserving Encryption, and revised on February 28th, 2019 with a draft update for FF3-1.
 * [NIST Recommendation SP 800-38G (FF3)](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38G.pdf)
 * [NIST Recommendation SP 800-38G Revision 1 (FF3-1)](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38Gr1-draft.pdf)
 
