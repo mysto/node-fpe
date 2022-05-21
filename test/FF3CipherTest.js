@@ -259,10 +259,12 @@ test('testacvp128dot2', (t) => {
 });
 
 /*
+
+these require custom alphabet support
 test('testacvp128dot3', (t) => {
   t.plan(2);
   // ACVP tg: 2 tc: 26
-  const c = new FF3Cipher("718385E6542534604419E83CE387A437", "B6F35084FA90E1", 10);
+  const c = new FF3Cipher("718385E6542534604419E83CE387A437", "B6F35084FA90E1", 26);
   const pt = "wfmwlrorcd", ct = "ywowehycyd";
   let ciphertext = c.encrypt(pt);
   let plaintext = c.decrypt(ciphertext);
