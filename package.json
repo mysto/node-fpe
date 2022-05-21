@@ -1,6 +1,6 @@
 {
   "name": "ff3",
-  "version": "0.8.3",
+  "version": "1.0.0",
   "description": "NIST standard Format-preserving encryption FF3-1 implementation",
   "main": "lib/FF3Cipher.js",
   "scripts": {
