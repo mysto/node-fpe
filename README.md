@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/mysto/node-fpe.svg?branch=main)](https://travis-ci.com/mysto/node-fpe)
+[![Build Status](https://github.com/mysto/node-fpe/actions/workflows/build.yml/badge.svg)](https://github.com/mysto/node-fpe/actions)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![npm module downloads](https://badgen.net/npm/dt/ff3)](https://www.npmjs.org/package/ff3)
 [![npm version](https://badge.fury.io/js/ff3.svg)](https://badge.fury.io/js/ff3)
